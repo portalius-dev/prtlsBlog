@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>prtlsBlog</title>
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    font-family: "DrukWideCyr", sans-serif;
+  }
+  .header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+  }
+  .nav {
+    display: flex;
+    justify-content: center;
+    background-color: #444;
+    padding: 10px 0;
+  }
+  .nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 15px;
+  }
+  .nav a:hover {
+    background-color: #555;
+  }
+  .container {
+    padding: 20px;
+  }
+  .post {
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  .post h2 {
+    margin-top: 0;
+  }
+  .footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .time {
+    opacity: 40%;
+  }
+
+  .wowPost {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 7px;
+  }
+
+  /* Создаем анимацию пульсации */
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 10px rgb(255, 255, 255);
+    }
+    50% {
+        box-shadow: 0 0 20px rgb(162, 0, 255);
+    }
+    100% {
+        box-shadow: 0 0 10px rgb(255, 255, 255);
+    }
+}
+
+/* Применяем анимацию к элементам с классом .wowPost */
+.wowPost {
+    animation: pulse 1s infinite;
+}
+
+@font-face {
+    font-family: "DrukWideCyr";
+    src: url("DrukWideCyr.woff2") format("woff2"),
+         url("DrukWideCyr.woff") format("woff");
+    /* Добавьте другие форматы шрифта, если необходимо */
+}
+
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>prtlsBlog</h1>
+  </div>
+  <div class="nav">
+    <a href="welcome.html">Главная</a>
+    <a href="index.html">Статьи</a>
+    <a href="kontakty.html">Контакты</a>
+  </div>
+  <div class="container">
+    <div class="wowPost">
+      <a href="https://budilki.ru/timer/?ysclid=lwl3wsmfth74150409#date=2024-06-04T09:00:00&sound=xylophone&loop=1"><h2>Осталось 10 дней...</h2></a>
+      <p>до кое чего...</p>
+      <h6 class="time">24.05.24, 23:02</h6>
+    </div>
+    <br>
+    <div class="post">
+      <h2>День рождения Сенплея!</h2>
+      <p>Сенплею сегодня исполняется 13 лет! Ура!</p>
+      <h6 class="time">21.05.24</h6>
+    </div>
+    <br>
+    <div class="post">
+      <h2>300!</h2>
+      <p>Наконец то! На канале 300 подписчиков! (не шутите про тракториста).</p>
+      <h6 class="time">20.05.24</h6>
+    </div>
+    <br>
+    <div class="post">
+      <h2>Создание блога!</h2>
+      <p>Начало разработки - 20.05.24.</p>
+      <h6 class="time">20.05.24</h6>
+    </div>
+    <br>
+    <div class="post">
+      <h2>тест!</h2>
+      <p>тест.</p>
+      <h6 class="time">20.05.24</h6>
+    </div>
+  </div>
+</body>
+</html>

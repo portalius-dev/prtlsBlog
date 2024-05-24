@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>prtlsBlog</title>
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    font-family: "DrukWideCyr", sans-serif;
+  }
+  .header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+  }
+  .nav {
+    display: flex;
+    justify-content: center;
+    background-color: #444;
+    padding: 10px 0;
+  }
+  .nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 15px;
+  }
+  .nav a:hover {
+    background-color: #555;
+  }
+  .container {
+    padding: 20px;
+  }
+  .post {
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    animation: textAnimation 2s infinite;
+  }
+  .post h2 {
+    margin-top: 0;
+  }
+  .footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+  @keyframes textAnimation {
+  0% { scale: 0.9; }
+  50% { scale: 1; }
+  100% { scale: 0.9; }
+}
+
+@font-face {
+    font-family: "DrukWideCyr";
+    src: url("DrukWideCyr.woff2") format("woff2"),
+         url("DrukWideCyr.woff") format("woff");
+    /* Добавьте другие форматы шрифта, если необходимо */
+}
+
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>prtlsBlog</h1>
+  </div>
+  <div class="nav">
+    <a href="welcome.html">Главная</a>
+    <a href="index.html">Статьи</a>
+    <a href="kontakty.html">Контакты</a>
+  </div>
+  <div class="container">
+    <div class="post">
+      <h2>Привет!</h2>
+      <p>Меня зовут Ярослав! Я - ютубер, битмейкер (начинающий), дизайнер, программист! Этот сайт - это мой блог! Здесь будут всякие новости, обьявления и т.д</p>
+    </div>
+    <!-- Добавьте больше постов здесь -->
+  </div>
+  <div class="footer">
+    <p>рыба</p>
+  </div>
+</body>
+</html>
